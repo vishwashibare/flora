@@ -1,4 +1,7 @@
+import 'package:flora/drawer/navdrawer.dart';
 import 'package:flutter/material.dart';
+import 'bottom_button/bottom_slider.dart';
+import 'drawer/navdrawer.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,22 +15,32 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
+        floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
         appBar: AppBar(
          
         ),
-        drawer: Drawer(
-          child: Text("hello"),
-        ),
+        
+        drawer: navdrawer(),
         body: Column(
           children: [
-            FloatingActionButton(onPressed: (){},  ),
-      
+            
+           MyHomePage(),
+           
+                 
+                 
+               
+               
+            
           ],
-        ),
+       
+        
+        
       ),
+        ),
+      );
 
 
       
-    );
+    
   }
 }
