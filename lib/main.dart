@@ -25,8 +25,8 @@ class MyApp extends StatelessWidget {
           children: [
             
            MyHomePage(),
-           Container(),
-           container(),
+           
+          
            
                  
                  

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'about_us.dart';
+
 class navdrawer extends StatefulWidget {
   const navdrawer({Key? key}) : super(key: key);
 
@@ -32,10 +34,12 @@ class _navdrawerState extends State<navdrawer> {
             },
           ),
           ListTile(
-            title: const Text('Item 2'),
+            title: const Text('About us'),
             onTap: () {
-              // Update the state of the app.
-              // ...
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const about_app()),
+              );
             },
           ),
         ],
