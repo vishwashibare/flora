@@ -23,7 +23,7 @@ class mail_num extends StatelessWidget {
             ),
           )),
           Text(
-            "Email us for any quary",
+            "Email us for any query",
             style: TextStyle(
               color: Colors.grey,
             ),

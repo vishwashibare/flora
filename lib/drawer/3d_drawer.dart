@@ -1,7 +1,6 @@
 import 'dart:math';
 
 import 'package:flora/bottom_button/News_pages/News_page.dart';
-import 'package:flora/main.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 // import 'package:nav_drawer_flora/homepage.dart';
@@ -130,7 +129,19 @@ class _NavDrawerState extends State<NavDrawer> {
                     ..setEntry(3, 2, 0.001)
                     ..setEntry(0, 3, 200 * val)
                     ..rotateY((pi / 6) * val),
-                  child: MyApp(),
+                  child: Scaffold(
+                    floatingActionButtonLocation:
+                        FloatingActionButtonLocation.centerDocked,
+                    appBar: AppBar(),
+
+                    // drawer: navdrawer(),
+                    body: Column(
+                      children: [
+                        MyHomePage(),
+                        
+                      ],
+                    ),
+                  ),
                 ));
               }),
           GestureDetector(
