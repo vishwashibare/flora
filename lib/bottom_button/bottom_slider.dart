@@ -111,7 +111,7 @@ class _MyHomePageState extends State<MyHomePage>
                         width: 50,
                         height: 50,
                         icon: Icon(
-                          Icons.camera_alt,
+                          Icons.shopping_cart,
                           color: Colors.white,
                         ),
                         onClick: () {
