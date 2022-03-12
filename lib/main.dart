@@ -15,7 +15,19 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home:  NavDrawer(),
+      home: Scaffold(
+                    floatingActionButtonLocation:
+                        FloatingActionButtonLocation.centerDocked,
+                    appBar: AppBar(),
+
+                    // drawer: navdrawer(),
+                    body: Column(
+                      children: [
+                        MyHomePage(),
+                        
+                      ],
+                    ),
+                  ),
       );
 
 
